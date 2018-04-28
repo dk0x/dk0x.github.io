@@ -1,0 +1,102 @@
+a
+{
+	text-decoration: none;
+	color: rgb(114, 168, 230);
+}
+
+body
+{
+	font-size: 1.1rem;
+	background-color: #F4F4F4;
+}
+
+
+.fullscreen-center-content
+{
+	width: 100%;
+	height: 100vh;
+	min-height: min-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form
+{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	max-width: 90%;
+	min-height: min-content;
+	background-color: #FFFFFF;
+	padding: 24px;
+	margin: 24px auto;
+    border-radius: 2px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #EEEFF1;
+}
+
+.element
+{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.logo
+{
+	height: 100px;
+	background-image: url(full-logo.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 10px;
+}
+
+.text 
+{
+	text-align: center;
+	font-size: 1.2rem;
+	margin-top: 10px;
+}
+
+.input-container
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.input-container input
+{
+	padding: 8px;
+	background-color: #FAFBFC;
+	border-style: solid;
+	border-color: #EEEFF1;
+	border-radius: 3px;
+	border-width: 1px;
+}
+
+.submit-button
+{
+	
+}
+
+.bottom-links
+{
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.bottom-links a
+{
+	margin-top: 10px;
+}
+
+
+/*div, p, span {
+	border: 1px;
+	border-color: aqua;
+	border-style: dashed;
+}*/
