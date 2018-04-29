@@ -1,7 +1,7 @@
-div, p, span, a {
+/*div, p, span, a {
 	border: 1px aqua dashed;
 	box-sizing: border-box;
-}
+}*/
 
 a {
 	text-decoration: none;
