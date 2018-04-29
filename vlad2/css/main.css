@@ -1,5 +1,6 @@
 div, p, span, a {
 	border: 1px aqua dashed;
+	box-sizing: border-box;
 }
 
 a {
@@ -9,7 +10,6 @@ a {
 
 html {
 	font-size: 14px;
-	box-sizing: border-box;
 }
 
 body {
