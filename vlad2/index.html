@@ -14,8 +14,12 @@
 	<script src="css/main.js"></script>
 </head>
 <body>
+	<div style="width: 100%; height: 25px;">
+		<input type="range" min="1" max="1000" value="10" 
+		id="slider" style="width: 100%;">
+	</div>
 	<div class="app">
-		<div class="fullheight-flex-column left-iconmenu">
+		<div id="menu" class="fullheight-flex-column left-iconmenu">
 			<a href="" class="fas fa-book"></a>
 			<a href="" class="fas fa-search"></a>
 			<a href="" class="fas fa-question"></a>
@@ -25,6 +29,14 @@
 		<div class="left-listmenu">
 			
 		</div>
-
+		
 	</div>
+
+	<script>
+		var slider = document.getElementById("slider");
+		var output = document.getElementById("menu");
+		slider.oninput = function () {
+			output.style.fontSize = this.value/10 + "vw";
+		}
+		</script>
 </body>
