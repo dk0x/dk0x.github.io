@@ -50,10 +50,17 @@ body
 
 .left-iconmenu>a
 {
-	margin: 10%;
-	width: 0.8em;
-	height: 0.8em;
-	font-size: 0.8em;
+	font-stretch: inherit;
+	margin: 0.2em;
+	width: 0.6em;
+	height: 0.6em;
+	
+}
+
+.left-iconmenu>a.bottom
+{
+	/*justify-self: flex-start;*/
+	/*align-self: flex-end;*/
 }
 
 /*.fullheight-flex-column>div
