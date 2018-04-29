@@ -39,20 +39,21 @@ body
 .left-iconmenu
 {
 	font-size: 50px;
-	width: 50px;
+	width: 1em;
 	background-color: #4A76A8;
 }
 
 .left-iconmenu>a
 {
-	margin: 0.2em;
-	width: 0.6em;
-	height: 0.6em;
+	display: flex;
+	margin: 0.1em;
+	width: 0.8em;
+	height: 0.8em;
 }
 
 .left-iconmenu>a::before
 {
-	font-size: 0.6em;
+	font-size: 0.8em;
 }
 
 .left-iconmenu>a.bottom
