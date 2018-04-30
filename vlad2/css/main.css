@@ -52,6 +52,9 @@ body {
 .left-iconmenu>a::before {
 	font-size: 0.4em;
 }
+.left-iconmenu>a:hover {
+	font-size: 1.4em;
+}
 
 .left-iconmenu>div.pushbottom {
 	margin-top: auto;
