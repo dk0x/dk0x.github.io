@@ -36,7 +36,7 @@ body {
 	background-color: #4A76A8;
 }
 
-.left-iconmenu>a {
+.left-iconmenu>a.fas {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -52,7 +52,7 @@ body {
 .left-iconmenu>a::before {
 	font-size: 0.4em;
 }
-.left-iconmenu>a:hover {
+.left-iconmenu>a:hover:not(.circlelogo) {
 	font-size: 1.4em;
 }
 
