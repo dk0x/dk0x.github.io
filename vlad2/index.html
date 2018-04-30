@@ -2,41 +2,56 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>111</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<link rel="stylesheet" type="text/css" href="css/sizes.css" />
-	<link rel="stylesheet" type="text/css" href="css/fontawesome/fontawesome-all.css" >
-	<script src="css/main.js"></script>
-</head>
-<body>
-	<div style="width: 100%; height: 25px;">
-		<input type="range" min="1" max="1000" value="10" 
-		id="slider" style="width: 100%;">
-	</div>
-	<div class="app">
-		<div id="menu" class="fullheight-flex-column left-iconmenu">
-			<a href="" class="fas fa-book"></a>
-			<a href="" class="fas fa-search"></a>
-			<a href="" class="fas fa-question"></a>
-			<a href="" class="fas fa-key bottom"></a>
-			<a href="" class="fas fa-key bottom"></a>
-		</div>
-		<div class="left-listmenu">
-			
-		</div>
-		
-	</div>
 
-	<script>
-		var slider = document.getElementById("slider");
-		var output = document.getElementById("menu");
-		slider.oninput = function () {
-			output.style.fontSize = this.value/10 + "vw";
-		}
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>111</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/sizes.css" />
+		<link rel="stylesheet" type="text/css" href="css/fontawesome/fontawesome-all.css">
+		<script src="css/main.js"></script>
+	</head>
+
+	<body>
+		<div style="width: 100%; height: 25px; display: none;">
+			<input type="range" min="1" max="1000" value="10" id="slider" style="width: 100%;">
+		</div>
+		<div class="app">
+			<div id="menu" class="fullheight-flex-column left-iconmenu">
+				<a href="" class="circlelogo"></a>
+				<a href="" class="fas fa-book"></a>
+				<a href="" class="fas fa-search"></a>
+				<a href="" class="fas fa-question"></a>
+				<div class="pushbottom"></div>
+				<a href="" class="fas fa-key"></a>
+				<a href="" class="fas fa-key"></a>
+			</div>
+
+			<div class="fullheight-flex-column left-listmenu">
+				<label class="title">База знаний</label>
+				<a href="" class="listelement">Корень БЗ<p>5</p></a>
+				<a href="" class="listelement">Новые статьи</a>
+				<a href="" class="listelement selected">Изменения в статьях<p>8</p></a>
+				<a href="" class="listelement">Лента событий</a>
+				<a href="" class="listelement">Мои статьи</a>
+				<a href="" class="listelement">Модерация</a>
+				<a href="" class="listelement">Поиск по БЗ<p>11</p></a>
+				<hr>
+				<a href="" class="listelement">Структура БЗ<p>9999</p></a>
+
+			</div>
+		</div>
+
+		<script>
+			var slider = document.getElementById("slider");
+			var output = document.getElementById("menu");
+			slider.oninput = function () {
+				output.style.fontSize = this.value / 10 + "vw";
+			}
 		</script>
-</body>
+	</body>
+
+</html>
