@@ -3,6 +3,13 @@
 	box-sizing: border-box;
 }
 
+hr {
+	border: none; 
+    color: #9EA6B5;
+    background-color: #9EA6B5;
+	height: 2px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -94,6 +101,7 @@ body {
 }
 .iconmenu>a:not(.circlelogo):hover {
 	font-size: 1.4em;
+	height: 0.6em;
 }
 
 .iconmenu>a.pushbottom {
@@ -101,7 +109,7 @@ body {
 }
 
 .iconmenu>a:last-child {
-	margin-bottom: 0.3em;
+	margin-bottom: 30px;
 }
 
 /* listmenu */
