@@ -1,5 +1,5 @@
 * {
-	border: 1px aqua dashed;
+	/*border: 1px aqua dashed;*/
 	box-sizing: border-box;
 }
 
@@ -41,6 +41,18 @@ body {
 .marginLR5{
 	margin-left: 5px;
 	margin-right: 5px;
+}
+
+.paddingR5 {
+	padding-right: 5px;
+}
+
+.gray {
+	color: #9EA6B5;
+}
+
+.black {
+	color: black;
 }
 
 /* iconmenu */
@@ -170,15 +182,15 @@ body {
 
 .articles-list-item {
 	width: 100%;
-	/*background-color: green;*/
 	display: flex;
 	flex-direction: row;
 	margin: 5px;
 }
 
 .articles-list-item-icon{
-	font-size: 32px;
+	font-size: 1.7rem;
 	align-self: center;
+	color: #9EA6B5;
 }
 
 .articles-list-item-title {
@@ -187,12 +199,35 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	color: gray;
+}
+
+.articles-list-item-title-text {
+	font-size: 0.8rem;
+}
+
+.articles-list-item-title-info::before {
+	padding-right: 5px;
+}
+.articles-list-item-title-info.fas {
+	font-weight: 100;
+}
+.articles-list-item-title-info.fas::before {
+	font-weight: 900;
+}
+
+.articles-list-item-title-info {
+	margin-top: 10px;
+	padding-right: 15px;
+	font-size: 0.9rem;
+	color: #9EA6B5;
 }
 
 .articles-list-item-dots
 {
 	font-size: 20px;
 	align-self: center;
+	color: #9EA6B5;
 }
 
 .articles-list-item-datetime {
@@ -200,7 +235,5 @@ body {
 	font-size: 0.8rem;
 	align-self: center;
 	text-align: center;
-}
-.articles-list-item>div:nth-child(2)>div {
-	font-size: 0.9rem;
+	color: #9EA6B5;
 }
