@@ -20,28 +20,52 @@
 			<input type="range" min="1" max="1000" value="10" id="slider" style="width: 100%;">
 		</div>
 		<div class="app">
-			<div id="menu" class="fullheight-flex-column left-iconmenu">
+			<nav class="flex-column iconmenu" id="menu">
 				<a href="" class="circlelogo"></a>
 				<a href="" class="fas fa-book"></a>
 				<a href="" class="fas fa-search"></a>
 				<a href="" class="fas fa-question"></a>
-				<div class="pushbottom"></div>
+				<a href="" class="fas fa-key pushbottom"></a>
 				<a href="" class="fas fa-key"></a>
-				<a href="" class="fas fa-key"></a>
+			</nav>
+
+			<div class="flex-column knowbasemenu">
+				<p>База знаний</p>
+				<a href="#">Корень БЗ
+					<p>5</p>
+				</a>
+				<a href="#">Новые статьи</a>
+				<a href="#" class="selected">Изменения в статьях
+					<p>8</p>
+				</a>
+				<a href="#">Лента событий</a>
+				<a href="#">Мои статьи</a>
+				<a href="#">Модерация</a>
+				<a href="#">Поиск по БЗ
+					<p>11</p>
+				</a>
+				<hr>
+				<a href="#">Структура БЗ
+					<p>9999</p>
+				</a>
 			</div>
 
-			<div class="fullheight-flex-column left-listmenu">
-				<label class="title">База знаний</label>
-				<a href="" class="listelement">Корень БЗ<p>5</p></a>
-				<a href="" class="listelement">Новые статьи</a>
-				<a href="" class="listelement selected">Изменения в статьях<p>8</p></a>
-				<a href="" class="listelement">Лента событий</a>
-				<a href="" class="listelement">Мои статьи</a>
-				<a href="" class="listelement">Модерация</a>
-				<a href="" class="listelement">Поиск по БЗ<p>11</p></a>
-				<hr>
-				<a href="" class="listelement">Структура БЗ<p>9999</p></a>
-
+			<div class="flex-column center articlessection">
+				<div class="articlesheader">
+					<p>Статьи в которых произошли изменения за 7 дней</p>
+					<div>
+						<select name="" id="">
+							<option value="">Сортировка по дате</option>
+							<option value="">2</option>
+							<option value="">3</option>
+						</select>
+						<select name="" id="">
+							<option value="">Я > А</option>
+							<option value="">А > Я</option>
+						</select>
+					</div>
+				</div>
+				<div class="articlesmain"></div>
 			</div>
 		</div>
 

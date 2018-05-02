@@ -1,5 +1,5 @@
 * {
-	/*border: 1px aqua dashed;*/
+	border: 1px aqua dashed;
 	box-sizing: border-box;
 }
 
@@ -20,51 +20,28 @@ body {
 	width: 100%;
 	height: 100vh;
 	display: flex;
+	justify-content: left;
 	flex-direction: row;
 }
 
-.fullheight-flex-column {
-	height: 100%;
-	min-height: min-content;
+.flex-column {
 	display: flex;
 	flex-direction: column;
 }
 
-.left-iconmenu {
+.center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* iconmenu */
+.iconmenu {
 	font-size: 70px;
 	width: 1em;
 	background-color: #4A76A8;
 }
 
-.left-iconmenu>a.fas {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 0.8em;
-	/*margin: 0.2em 0;*/
-	/*width: 0.4em;*/
-	/*width: 100%;*/
-	/*height: 0.4em;*/
-	color: #BFCFE0;
-	text-decoration: none;
-}
-
-.left-iconmenu>a::before {
-	font-size: 0.4em;
-}
-.left-iconmenu>a:hover:not(.circlelogo) {
-	font-size: 1.4em;
-}
-
-.left-iconmenu>div.pushbottom {
-	margin-top: auto;
-}
-
-.left-iconmenu>a:last-child {
-	margin-bottom: 0.3em;
-}
-
-.left-iconmenu>a.circlelogo {
+.iconmenu>a.circlelogo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -75,24 +52,50 @@ body {
 	background-color: #698DB7;
 }
 
-.left-iconmenu>a.circlelogo::before {
+.iconmenu>a.circlelogo::before {
 	content: "СВД";
 	font-size: 0.22em;
 	cursor: pointer;
 	color: #BFCFE0;
 }
 
-.left-listmenu {
+.iconmenu>a:not(.circlelogo) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 0.8em;
+	color: #BFCFE0;
+	text-decoration: none;
+}
+
+.iconmenu>a:not(.circlelogo)::before {
+	font-size: 0.4em;
+}
+.iconmenu>a:not(.circlelogo):hover {
+	font-size: 1.4em;
+}
+
+.iconmenu>a.pushbottom {
+	margin-top: auto;
+}
+
+.iconmenu>a:last-child {
+	margin-bottom: 0.3em;
+}
+
+/* listmenu */
+
+.knowbasemenu {
 	width: 230px;
 	background-color: #F4F5F7;
 	font-size: 1rem;
 }
 
-.left-listmenu>label.title {
-	padding: 10px 5px;
+.knowbasemenu>p {
+	margin: 15px 5px;
 }
 
-.left-listmenu>a.listelement {
+.knowbasemenu>a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -104,17 +107,17 @@ body {
 	color: black;
 }
 
-.left-listmenu>a.listelement:hover {
+.knowbasemenu>a:hover {
 	border-radius: 4px;
 	background-color: rgb(235, 235, 235);
 } 
 
-.left-listmenu>a.selected {
+.knowbasemenu>a.selected {
 	border-radius: 4px;
 	background-color: #D7DBE4;
 }
 
-.left-listmenu>a>p {
+.knowbasemenu>a>p {
 	display: flex;
 	align-items: center;
 	font-size: 0.95em;
@@ -124,3 +127,36 @@ body {
 	background-color: #85BE9F;
 	color: white;
 }
+
+
+
+/* postlist */
+
+.articlessection {
+	width: 100%;
+	max-width: 1000px;
+}
+
+.articlessection>div {
+	margin: 10px;
+}
+
+/* postlistheader inside postlist */
+
+.articlesheader>p {
+	font-size: 1.5rem;
+	margin: 10px;
+}
+
+.articlesheader>div {
+	margin: 10px;
+}
+
+.articlesheader>div>select {
+	font-size: 0.8rem;
+	padding: 5px;
+}
+
+/* postlistmain inside postlist */
+
+.postlistmain
