@@ -164,7 +164,6 @@ body {
 .articles-section {
 	width: 100%;
 	max-width: 1000px;
-	overflow: scroll;
 }
 
 .articles-section>div {
@@ -183,6 +182,11 @@ body {
 .articles-header>div>select {
 	font-size: 0.8rem;
 	padding: 5px;
+}
+
+.articles-section {
+	overflow: auto;
+	height: 100%;
 }
 
 .articles-list-item {
