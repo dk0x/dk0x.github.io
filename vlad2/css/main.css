@@ -34,6 +34,15 @@ body {
 	margin-left: auto;
 }
 
+.fullwidth {
+	width: 100%;
+}
+
+.marginLR5{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 /* iconmenu */
 .iconmenu {
 	font-size: 70px;
@@ -132,31 +141,66 @@ body {
 
 /* postlist */
 
-.articlessection {
+.articles-section {
 	width: 100%;
 	max-width: 1000px;
 }
 
-.articlessection>div {
+.articles-section>div {
 	margin: 10px;
 }
 
 /* postlistheader inside postlist */
 
-.articlesheader>p {
+.articles-header>p {
 	font-size: 1.5rem;
 	margin: 10px;
 }
 
-.articlesheader>div {
+.articles-header>div {
 	margin: 10px;
 }
 
-.articlesheader>div>select {
+.articles-header>div>select {
 	font-size: 0.8rem;
 	padding: 5px;
 }
 
 /* postlistmain inside postlist */
 
-.postlistmain
+.articles-list-item {
+	width: 100%;
+	/*background-color: green;*/
+	display: flex;
+	flex-direction: row;
+	margin: 5px;
+}
+
+.articles-list-item-icon{
+	font-size: 32px;
+	align-self: center;
+}
+
+.articles-list-item-title {
+	margin-left: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.articles-list-item-dots
+{
+	font-size: 20px;
+	align-self: center;
+}
+
+.articles-list-item-datetime {
+	width: 10rem;
+	font-size: 0.8rem;
+	align-self: center;
+	text-align: center;
+}
+.articles-list-item>div:nth-child(2)>div {
+	font-size: 0.9rem;
+}
