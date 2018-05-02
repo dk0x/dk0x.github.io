@@ -207,7 +207,7 @@ body {
 }
 
 .articles-list-item-title-info::before {
-	padding-right: 5px;
+	padding-right: 5px; 
 }
 .articles-list-item-title-info.fas {
 	font-weight: 100;
