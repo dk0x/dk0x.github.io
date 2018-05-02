@@ -159,18 +159,17 @@ body {
 
 
 
-/* postlist */
+/* articles*/
 
 .articles-section {
 	width: 100%;
 	max-width: 1000px;
+	overflow: scroll;
 }
 
 .articles-section>div {
 	margin: 10px;
 }
-
-/* postlistheader inside postlist */
 
 .articles-header>p {
 	font-size: 1.5rem;
@@ -185,8 +184,6 @@ body {
 	font-size: 0.8rem;
 	padding: 5px;
 }
-
-/* postlistmain inside postlist */
 
 .articles-list-item {
 	width: 100%;
